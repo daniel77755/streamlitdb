@@ -107,15 +107,16 @@ with st.form(key='chat_form'):
 
 if submit_button and query:
     response_api = connect_api(query)
-    st.session_state.response_shown = False
-    st.session_state.score_ready = False
+    st.write("Texto de respuesta:", response_api.text)
+    #st.session_state.response_shown = False
+    #st.session_state.score_ready = False
     
-    if response_api.status_code != 200:
-        st.write("⚠️ Error HTTP:", response_api.status_code)
-        st.write("Texto de respuesta:", response_api.text)
-        st.write("⚠️ No 'response' key found in JSON.", response_api)
-    else:
-        st.session_state.respuesta = response_api.text
-        st.session_state.response_shown = True
+    #if response_api.status_code != 200:
+    #    st.write("⚠️ Error HTTP:", response_api.status_code)
+    #    st.write("Texto de respuesta:", response_api.text)
+    #    st.write("⚠️ No 'response' key found in JSON.", response_api)
+    #else:
+    #    st.session_state.respuesta = response_api.text
+    #    st.session_state.response_shown = True
 
     
