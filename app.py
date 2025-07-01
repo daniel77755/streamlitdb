@@ -107,7 +107,7 @@ with st.form(key='chat_form'):
 
 if submit_button and query:
     response_api = connect_api(query)
-    st.write("Texto de respuesta:", response_api.text)
+    st.write("respuesta:", response_api.text)
     #st.session_state.response_shown = False
     #st.session_state.score_ready = False
     
