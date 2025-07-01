@@ -32,7 +32,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# Estilos personalizados
+# Estilos personalizados 
 st.markdown("""
     <style>
     /* Estilo general del contenedor de la app */
