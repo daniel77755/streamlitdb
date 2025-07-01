@@ -97,7 +97,7 @@ def connect_api(query):
         "data": {"question": query}
     })
 
-    responses = requests.post("https://agent-gateway-ak877eu7.uc.gateway.dev/streamlit/event", headers=headers, data=payload)
+    responses = requests.post("https://agent-gateway-radicaciones-ak877eu7.uc.gateway.dev/streamlit/event", headers=headers, data=payload)
     return responses 
     
 # Usa st.form para agrupar el input y botón 
