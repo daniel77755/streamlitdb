@@ -28,7 +28,7 @@ st.markdown("""
                    color: #4B0082; 
                    font-size: 40px;
                    text-shadow: 1px 1px 2px #7C01FF;'>Agente Radicaciones Habicredit</h1>
-        <p style='font-size: 18px; color: #555;'>Consulta, automatiza y obtén respuestas inteligentes</p>
+        <p style='font-size: 18px; color: #555;'>Consulta y obtén respuestas inteligentes de radicaciones liquidez</p>
     </div>
 """, unsafe_allow_html=True)
 
