@@ -21,49 +21,69 @@ with col2:
     st.image("logohabi.png", width=250)
 
     
-# Ahora crea otra fila para centrar el texto debajo
-st.markdown("<h1 style='text-align: center; margin-top: 20px;'>Agente Habicredit</h1>", unsafe_allow_html=True)
+# Encabezado centrado con estilo mejorado
+st.markdown("""
+    <div style='text-align: center; margin-top: 30px; margin-bottom: 20px;'>
+        <h1 style='font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+                   color: #4B0082; 
+                   font-size: 40px;
+                   text-shadow: 1px 1px 2px #7C01FF;'>Agente Radicaciones Habicredit</h1>
+        <p style='font-size: 18px; color: #555;'>Consulta, automatiza y obtén respuestas inteligentes</p>
+    </div>
+""", unsafe_allow_html=True)
 
-
+# Estilos personalizados
 st.markdown("""
     <style>
-    .stform_submit_button>button:hover {
-        background-color: #7cdb91; /* Green */
-        color: #7cdb91;
-        #background-color: #B86FFF !important;
+    /* Estilo general del contenedor de la app */
+    .main {
+        background-color: #F7F7F9;
     }
 
- 
-/* New CSS for changing the shadow color of the text input when hovered */
-.stTextInput>div>div>input:hover {
-    box-shadow: 2px 2px 5px rgba(0,255,0,0.75); /* Green shadow when hovered */
-}
-
-    .stButton button:focus {
-        border: 2px solid #7cdb91; /* Green border color when focused */
-        color: #7cdb91; /* Green text color when focused */
+    /* Botón de submit */
+    .stButton > button {
+        background-color: #7C01FF;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 24px;
+        border: none;
+        font-weight: bold;
+        transition: 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(124,1,255,0.2);
     }
 
-    /* CSS for changing the border color and shadow of the text input box */
+    .stButton > button:hover {
+        background-color: #6200cc;
+        color: white;
+        box-shadow: 0px 4px 12px rgba(124,1,255,0.4);
+    }
+
+    /* Input de texto */
     .stTextInput>div>div>input {
-        border: 2px solid #7C01FF; /* Blue border color */
-        box-shadow: 2px 2px 5px rgba(124,1,255,1.000); /* Default shadow */
-        #border: 2px solid #7C01FF !important;       /* Contorno morado */
-        #box-shadow: 2px 2px 5px rgba(124,1,255,0.5);
+        border: 2px solid #7C01FF;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 16px;
+        box-shadow: 0px 2px 6px rgba(124,1,255,0.15);
+        transition: box-shadow 0.3s ease, border 0.3s ease;
     }
 
-    /* New CSS for changing the shadow color of the text input when hovered */
     .stTextInput>div>div>input:hover {
-        box-shadow: 2px 2px 5px rgba(124,1,255,1.000); /* Red shadow when hovered */
+        box-shadow: 0px 2px 8px rgba(124,1,255,0.35);
     }
 
-    /* CSS for changing the border color and shadow of the text input box when focused */
     .stTextInput>div>div>input:focus {
-        border: 2px solid #7C01FF; /* Red border color when focused */
-        box-shadow: 2px 2px 5px rgba(124,1,255,1.000); /* Red shadow when focused */
+        border: 2px solid #4B0082;
+        box-shadow: 0px 2px 10px rgba(75,0,130,0.5);
+    }
+
+    /* Centrado de formularios */
+    .block-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     </style>
-    """, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
     
 def connect_api(query):
